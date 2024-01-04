@@ -36,7 +36,7 @@ const AboutText = styled(motion.p)`
   font-family: "GeneralSans-Medium";
   font-weight: 500;
   line-height: 1.4;
-  text-indent: min(10vw,100rem);
+  ${isMobile() ? `text-indent: 0;` : `text-indent: min(10vw,100rem);`}
 `
 
 const About = () => {

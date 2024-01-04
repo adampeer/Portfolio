@@ -13,8 +13,8 @@ const Section = styled.section`
 
 const Wrapper = styled.div`
   height: min(200vh,100%);
-  width: max(80vw,1000px);
   display: flex;
+  ${isMobile() ? `width: 90vw;` : `width: max(80vw,1000px);`}
   ${isMobile() ? `flex-direction: column;` : `flex-direction: row;`}
 `
 

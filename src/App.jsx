@@ -24,23 +24,7 @@ const App = () => {
     }
 
     requestAnimationFrame(raf)
-
-    // Simulate a loading process, for example fetching data
-    // After the loading process is complete, set isLoading to false
-    // setTimeout(() => {
-    //   setIsLoading(false);
-    // }, 3000);
-
-    // // Make sure to clean up the RAF loop when the component unmounts
-    // return () => {
-    //   // Cancel the animation frame request
-    //   // You would need to store the request ID returned by requestAnimationFrame to do this
-    // };
   }, []);
-
-  // if (isLoading) {
-  //   return <Loading />;
-  // }
 
   return (
     <>

@@ -28,7 +28,7 @@ const CardItem = styled(motion.div)`
   background-size: cover;
   background-position: center;
   object-fit: cover;
-  ${isMobile() ? `height: 65vh;` : `height: 50vh;`}
+  ${isMobile() ? `height: 80vh;` : `height: 50vh;`}
   ${isMobile() ? `width: 70vw;` : `width: 50vw;`}
   ${isMobile() ? `padding: 50px;` : `padding: 5vh;`}
 `
