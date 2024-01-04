@@ -1,3 +1,4 @@
+import { SpeedInsights } from "@vercel/speed-insights/react"
 import { useState, useEffect } from 'react';
 import Lenis from '@studio-freight/lenis'
 import './App.css'
@@ -53,6 +54,7 @@ const App = () => {
           <Work />
           <CardList />
           <Contact />
+          <SpeedInsights />
         </>
       )}
     </>
