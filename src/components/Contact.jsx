@@ -73,7 +73,8 @@ const FormInput = styled.input`
   border: none;
   border-bottom: 1px solid #ffffff5e;
   background-color: #000000;
-  ${isMobile() ? `padding: 1rem 0;` : `padding: 4vh 0;`}
+  ${isMobile() ? `margin-bottom: 0;` : `margin-bottom: 1rem;`}
+  ${isMobile() ? `padding: 1rem 0;` : `padding: 3vh 0;`}
   ${isMobile() ? `font-size: 1.2rem;` : `font-size: clamp(2rem,1.5vw,3rem);`}
   &:focus {
     outline: none;
