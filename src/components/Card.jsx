@@ -47,8 +47,8 @@ const Title = styled.h1`
   color: #ffffff;
   text-transform: uppercase;
   padding-bottom: 2rem;
-  ${isMobile() ? ` padding-top: 2rem;` : `padding-top: 0rem;`}
-  ${isMobile() ? `font-size: 3rem;` : `font-size: clamp(3rem,7.5vw,9rem);`}
+  ${isMobile() ? ` padding-top: 3rem;` : `padding-top: 0rem;`}
+  ${isMobile() ? `font-size: 2.3rem;` : `font-size: clamp(3rem,7.5vw,9rem);`}
 `
 
 const CardTitle = styled.h1`
