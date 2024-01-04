@@ -25,15 +25,15 @@ const TitleContainer = styled.div`
 const Title = styled.h1`
   color: #fff;
   text-transform: uppercase;
-  ${isMobile() ? `font-size: 3rem;` : `font-size: clamp(3rem,7.5vw,9rem);`}
+  text-align: center;
+  ${isMobile() ? `font-size: 2.3rem;` : `font-size: clamp(3rem,7.5vw,9rem);`}
 `
 
 const Subtitle = styled.h2`
-  ${isMobile() ? `font-size: 1rem;` : `font-size: 1.3rem;`}
   color: #fff;
   opacity: 0.8;
   padding-bottom: 2rem;
-  ${isMobile() ? `font-size: 3rem;` : `font-size: clamp(1.3rem,1.5vw,2rem);`}
+  ${isMobile() ? `font-size: 1rem;` : `font-size: clamp(1.3rem,1.5vw,2rem);`}
 `
 
 const CardContainer = styled.div`
@@ -87,7 +87,7 @@ const CardContentTitle = styled.h2`
   margin-top: 0.5rem;
   margin-bottom: -0.5rem;
   font-family: "GeneralSans-Medium";
-  ${isMobile() ? `font-size: 1rem;` : `font-size: min(5vh,2.5rem);`}
+  ${isMobile() ? `font-size: 1.2rem;` : `font-size: min(5vh,2.5rem);`}
 `
 
 const CardContentSubtitle = styled.h3`
@@ -104,7 +104,7 @@ const CardContentPill = styled.div`
   color: #000000;
   border-radius: 2rem;
   font-family: "GeneralSans-Medium";
-  ${isMobile() ? `font-size: 1rem;` : `font-size: min(2vh,1rem);`}
+  ${isMobile() ? `font-size: 0.8rem;` : `font-size: min(2vh,1rem);`}
 `
 
 const WorkCard = ({ title, subtitle, skills, imgSrc, flex }) => (

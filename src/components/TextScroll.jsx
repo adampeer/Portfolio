@@ -13,7 +13,7 @@ const Parallax = styled.div`
   color: white;
   transform: rotate(-5deg);
   font-family: "GeneralSans-Medium";
-  ${isMobile() ? `margin-top: 8rem;` : `margin: 0;`}
+  ${isMobile() ? `margin-top: 5rem;` : `margin: 0;`}
 `
 
 const Scroller = styled(motion.div)`
@@ -24,7 +24,7 @@ const Scroller = styled(motion.div)`
   display: flex;
   flex-wrap: nowrap;
   height: fit-content;
-  ${isMobile() ? `font-size: 8rem;` : `font-size: 25vh;`}
+  ${isMobile() ? `font-size: 6rem;` : `font-size: 25vh;`}
 `
 
 const Text = styled(motion.span)`

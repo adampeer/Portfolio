@@ -20,10 +20,10 @@ const Header = styled.header`
 const HeaderTextContainer = styled.div`
   height: auto;
   margin-top: 2rem;
-  ${isMobile() ? `width: 95vw;` : `width: 90vw;`}
   position: absolute;
   display: flex;
   justify-content: space-between;
+  ${isMobile() ? `width: 95vw;` : `width: 90vw;`}
 `
 
 const HeaderText = styled.h1`
@@ -32,7 +32,7 @@ const HeaderText = styled.h1`
   font-weight: 600;
   letter-spacing: 0px;
   ${isMobile() ? `margin: 0 1rem;` : `margin: 0;`}
-  ${isMobile() ? `font-size: 1.5rem;` : `font-size: 2.4vh;`}
+  ${isMobile() ? `font-size: 1rem;` : `font-size: 2.4vh;`}
 `
 
 const MenuText = styled(HeaderText)`
@@ -54,8 +54,8 @@ const HeroTextContainer = styled.div`
 
 const HeroTextGrid = styled.div`
   display: flex;
-  ${isMobile() ? `flex-direction: column;` : `flex-direction: row;`}
   align-items: center;
+  ${isMobile() ? `flex-direction: column;` : `flex-direction: row;`}
 `
 
 const HeroText = styled.p`
@@ -64,7 +64,7 @@ const HeroText = styled.p`
   line-height: 1.3;
   font-family: 'GeneralSans-Medium';
   font-weight: 600;
-  ${isMobile() ? `font-size: 3rem;` : `font-size: clamp(3rem,7vw,8rem);`}
+  ${isMobile() ? `font-size: 2.5rem;` : `font-size: clamp(3rem,7vw,8rem);`}
 `
 
 const ImgDiv = styled.div`
@@ -74,7 +74,7 @@ const ImgDiv = styled.div`
   background-position: center;
   background-repeat: no-repeat;
   ${isMobile() ? `margin: 1rem 0;` : ``}
-  ${isMobile() ? `width: 80vw;` : `width: 20vw;`}
+  ${isMobile() ? `width: 70vw;` : `width: 20vw;`}
   aspect-ratio: 25/10;
 `
 

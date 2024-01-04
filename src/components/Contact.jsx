@@ -13,8 +13,8 @@ const Section = styled.section`
 
 const Wrapper = styled.div`
   height: min(200vh,100%);
-  width: max(80vw,1000px);
   display: flex;
+  ${isMobile() ? `width: 90vw;` : `width: max(80vw,1000px);`}
   ${isMobile() ? `flex-direction: column;` : `flex-direction: row;`}
 `
 
@@ -29,7 +29,7 @@ const RightContainer = styled.div`
 const TitleContainer = styled.div`
   display: flex;
   flex-direction: column;
-  ${isMobile() ? `padding: 2rem;` : `padding: 1rem;`}
+  ${isMobile() ? `padding-top: 2rem;` : `padding: 1rem;`}
 `
 
 const Title = styled.h1`
@@ -50,7 +50,7 @@ const FormContainer = styled.div`
   display: flex;
   flex-direction: column;
   ${isMobile() ? `justify-content: center;` : ``}
-  ${isMobile() ? `padding: 2rem;` : `padding: 1rem;`}
+  ${isMobile() ? `padding: 1rem 0.1rem;` : `padding: 1rem;`}
 `
 
 const Form = styled.form`
@@ -62,10 +62,9 @@ const Form = styled.form`
 
 const FormLabel = styled.label`
   color: #ffffff;
-  ${isMobile() ? `font-size: 2rem;` : `font-size: 4vh;`}
   font-family: "GeneralSans-Medium";
   ${isMobile() ? `padding: 1rem 0;` : `padding: 1vh 0;`}
-  ${isMobile() ? `font-size: 2rem;` : `font-size: clamp(2rem,1.5vw,3rem);`}
+  ${isMobile() ? `font-size: 1.2rem;` : `font-size: clamp(2rem,1.5vw,3rem);`}
 `
 
 const FormInput = styled.input`
@@ -75,7 +74,7 @@ const FormInput = styled.input`
   border-bottom: 1px solid #ffffff5e;
   background-color: #000000;
   ${isMobile() ? `padding: 1rem 0;` : `padding: 4vh 0;`}
-  ${isMobile() ? `font-size: 2rem;` : `font-size: clamp(2rem,1.5vw,3rem);`}
+  ${isMobile() ? `font-size: 1.2rem;` : `font-size: clamp(2rem,1.5vw,3rem);`}
   &:focus {
     outline: none;
     border-bottom: 1px solid #ffffff;
@@ -92,7 +91,7 @@ const FormButton = styled.button`
   border-radius: 5rem;
   padding: 1rem;
   ${isMobile() ? `margin: 3rem 0;` : `margin: 5vh 0;`}
-  ${isMobile() ? `font-size: 2rem;` : `font-size: clamp(2rem,2vw,3rem);`}
+  ${isMobile() ? `font-size: 1.2rem;` : `font-size: clamp(2rem,2vw,3rem);`}
   &:hover {
     background-color: #ffffff;
     color: #000;
